@@ -4,9 +4,8 @@
 WITH CTE AS (
   SELECT
     STRFTIME('%Y', soldDate) AS yearSale,
-     FORMAT("$%.2f", SUM(salesAmount)) AS sumSalesAmount
-  FROM sales sls-- Display cars sold for each employee by month
-
+    FORMAT("$%.2f", SUM(salesAmount)) AS sumSalesAmount
+  FROM sales sls
   GROUP BY 1
 )
 

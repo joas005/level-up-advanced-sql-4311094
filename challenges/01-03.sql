@@ -24,3 +24,11 @@ SELECT
 FROM sales s
 LEFT JOIN customer cst ON s.customerId = cst.customerId
 WHERE cst.customerId IS NULL;
+
+
+SELECT
+  cst.firstName,
+  cst.lastName,
+  S.salesAmount
+FROM customer cst
+FULL OUTER JOIN sales s ON cst.customerId = s.customerId
