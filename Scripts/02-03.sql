@@ -10,3 +10,4 @@ INNER JOIN employee emp
 WHERE sls.soldDate >= date('now','start of year')
 GROUP BY emp.employeeId
 HAVING count(*) > 5
+ORDER BY 2 DESC

@@ -4,7 +4,7 @@
 SELECT *
 FROM sales sls
 INNER JOIN inventory inv
-  ON sls.inventoryId = inv.inventoryId
+  ON sls.inventoryId = inv.inventoryId;
 
 -- 2. review the model table
 Select *
